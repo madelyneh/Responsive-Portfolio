@@ -1,11 +1,3 @@
-@media only screen and (max-width: 768px) {
-  /* For desktop: */
-  h1 {
-    background-color: red;
-    color: blue;
-  }
-
-}
 
 
 body {
@@ -110,11 +102,9 @@ body {
   /* footer */
   
   footer {
-    padding: 30px 0;
     clear: both;
     font-size: 12px;
     color: #ffffff;
-    color: #cccccc;
     text-align: center;
     background: #666666;
     border-top: 8px solid #4aaaa5;
@@ -245,4 +235,102 @@ body {
     border: 0 none;
   }
 
+  @media only screen and (min-width: 960px) {
+    /* For desktop: */
+     .container {
+       max-width: 960px;
+     }
   
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+
+    #main-container {
+      padding-top: 0;
+    }
+
+    .sidebar {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .main-section {
+      overflow: auto;
+      margin-bottom: 40px;
+      margin-top: 0;
+      float: none;
+      max-width: 720px;
+    }
+
+    #masthead {
+      position: static;  
+    }
+
+    .work {
+      width: 305px;
+    }
+
+    footer {
+      padding: 0;
+      margin-top: 40px;
+    }
+
+  }
+
+  @media only screen and (max-width: 640px) {
+    
+
+    #main-container {
+      padding-top: 0;
+      max-width: 600px;
+    }
+
+    .sidebar {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .main-section {
+      overflow: auto;
+      margin-bottom: 40px;
+      margin-top: 0;
+      float: none;
+      max-width: 600px;
+    }
+
+    #masthead {
+      position: static;
+    }
+
+    #logo {
+      display: block;
+      width: 100%;
+      font-size: 40px;
+    }
+    
+    nav {
+      margin-top: 0;
+      float: none;
+      text-align: center;
+      height: 140px;
+      line-height: 45px;
+    }
+
+    .work {
+      float: none;
+      width: 100%;
+    }
+
+
+    footer {
+      padding: 0;
+      margin-top: 40px;
+    }
+
+  }
+
