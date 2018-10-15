@@ -321,6 +321,11 @@ body {
       line-height: 45px;
     }
 
+    .auth-image {
+      float: none;
+      width: 100%;
+    }
+
     .work {
       float: none;
       width: 100%;
